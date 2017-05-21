@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login page</title>
+    {% load staticfiles %}
+	<link rel="stylesheet" type="text/css" href="{% static 'Style/login_style.css' %}" />
+</head>
+<body>
+<div id="user_login">
+	<form  action="/login/" method="post" >
+        <table align=center>
+            <tr>
+                <td>Input Yous username</td>
+            </tr>
+            <tr>
+                <td><input type="text" name="username" style="width:200px;height:26px" ></td>
+            </tr>
+            <tr>
+                <td>Input Yous password</td>
+            </tr>
+            <tr>
+                <td><input type="password" name="password" style="width:200px;height:26px"></td>
+            </tr>
+            <tr>
+                <td height="80px"><input type="submit" value="登     录" style=" background: #353; border:none;color: brown;font-size:16px; width:200px; height:30px;" ></td>
+            </tr>
+        </table>
+
+	</form>
+	</div>
+</body>
+</html>

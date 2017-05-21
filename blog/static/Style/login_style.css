@@ -1,0 +1,12 @@
+#user_login{
+	background: #334444;
+	width: 300px;
+	height:200px;
+	text-align:center;
+	margin:200px auto;
+	border:1px;
+	border-radius:10px;
+}
+body{
+	background: #334433;
+}

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>home page</title>
+    {% load staticfiles %}
+	<link rel="stylesheet" type="text/css" href="{% static 'Style/home_style.css' %}" />
+</head>
+<body>
+<div id="user_home">
+		<a href="/logout"><img src="{% static 'Images/02-1.png' %}" /></a>
+</div>
+<div id="user_session">
+    {{username}}
+</div>
+<div id="wel"> welcome </div>
+<div id="home_img"> <img src="{% static 'Images/img00.jpg' %}" /></div>
+
+</body>
+</html>

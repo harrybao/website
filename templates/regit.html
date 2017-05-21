@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>regeit page</title>
+    {% load staticfiles %}
+	<link rel="stylesheet" type="text/css" href="{% static 'Style/regit_style.css' %}" />
+</head>
+<body>
+<div id="user_regit">
+    <form method="post" >
+        <table align=center>
+            <tr>
+                <td bgcolor="#330244"><font size="4" color="red">Input Yous username</font></td>
+            </tr>
+            <tr>
+                <td height="30px">{{uf.username}}</td>
+            </tr>
+            <tr>
+                <td bgcolor="#330244"><font size="4" color="red">Input Yous password</font></td>
+            </tr>
+            <tr>
+                <td height="30px">{{uf.password}}</td>
+            </tr>
+            <tr>
+                <td bgcolor="#330244"><font size="4" color="red">Input Yous email</font></td>
+            </tr>
+            <tr>
+                <td height="30px">{{uf.usermail}}</td>
+            </tr>
+            <tr>
+                <td height="80px" ><input type="submit" value="注     册" style=" background: #313; border:none; font-size:16px; width:160px; height:26px; color: magenta"  ></td>
+            </tr>
+
+        </table>
+	</form>
+</div>
+
+</body>
+</html>

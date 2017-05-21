@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>index page</title>
+    {% load staticfiles %}
+	<link rel="stylesheet" type="text/css" href="{% static 'Style/index_style.css' %}" />
+
+
+</head>
+<body>
+<div id="re_log">
+		<a href="/regit"><img src="{% static 'Images/3_01.png' %}" /></a>
+		<a a href="javascript:" onClick="bgDiv.style.display='';loginBox.style.display='';"><img src="{% static 'Images/3_03.png' %}" /></a>
+</div>
+<div id="index_img">
+	<img src="{% static 'Images/img01.jpg' %}" />
+</div>
+<script type="text/javascript" language="JavaScript" src="{% static 'JavaScript/index_js.css' %}"></script>
+<div id="bgDiv" style="display:none;"></div>
+    <a href="javascript:" onClick="bgDiv.style.display='';loginBox.style.display='';">登录</a>
+    <div id="loginBox" style="position:absolute; left:367px; top:150px; z-index:1;display: none;">
+        <div class="title" id="Mdown"><span class="t1">登录</span><span class="t2" title="关闭" onClick="login.style.display='none';bgDiv.style.display='none'">X</span></div>
+        <div class="login">
+            <form method="post" action="/login/">
+                <table>
+                    <tr>
+                        <td>用户名:</td>
+                        <td>
+                            <input type="text" name="username" size="18" maxlength="10"
+                            style="width:200px;height:26px">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>密　码:</td>
+                        <td>
+                            <input type="password" name="password" size="18" maxlength="10" style="width:200px;height:26px">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="submit" value="登     录" style=" background: #353; border:none;color: brown;font-size:16px; width:200px; height:30px;" >
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>
